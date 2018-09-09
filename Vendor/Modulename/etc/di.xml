@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/** 
+ * @package   Vendor_Modulename
+ * @author    Ricky Thakur (Kapil Dev Singh)
+ * @copyright Copyright (c) 2018 Ricky Thakur
+ * @license   MIT license (see LICENSE.txt for details)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <preference for="Vendor\Modulename\Api\Data\EntityInterface" type="Vendor\Modulename\Model\Entity" />
+    
+
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="vendormodulename_entity_list_data_source" xsi:type="string">Vendor\Modulename\Model\ResourceModel\Entity\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Vendor\Modulename\Model\ResourceModel\Entity\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">sometable_name</argument>
+            <argument name="resourceModel" xsi:type="string">Vendor\Modulename\Model\ResourceModel\Entity</argument>
+        </arguments>
+    </virtualType>
+</config>

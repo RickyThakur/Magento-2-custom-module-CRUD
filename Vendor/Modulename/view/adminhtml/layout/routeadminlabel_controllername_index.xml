@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/** 
+ * @package   Vendor_Modulename
+ * @author    Ricky Thakur (Kapil Dev Singh)
+ * @copyright Copyright (c) 2018 Ricky Thakur
+ * @license   MIT license (see LICENSE.txt for details)
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <!-- <head>
+        <title>
+                Greetings
+        </title>
+    </head> -->
+    <body>
+        <referenceContainer name="content">
+            <!-- <block class="Magento\Backend\Block\Template" template="Vendor_Modulename::firstpage.phtml" /> -->
+            <uiComponent name="vendormodulename_entity_list"/>
+        </referenceContainer>
+    </body>
+</page>
+  

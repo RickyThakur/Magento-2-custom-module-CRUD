@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/** 
+ * @package   Vendor_Modulename
+ * @author    Ricky Thakur (Kapil Dev Singh)
+ * @copyright Copyright (c) 2018 Ricky Thakur
+ * @license   MIT license (see LICENSE.txt for details)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Vendor_Modulename::menu_1" title="Title for ACL" sortOrder="999">
+                    <resource id="Vendor_Modulename::menu_1_1" title="Menu title for ACL" sortOrder="10">
+                        <resource id="Vendor_Modulename::entity" title="Entity" translate="title" sortOrder="10">                            
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

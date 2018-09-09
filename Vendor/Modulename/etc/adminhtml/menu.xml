@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/** 
+ * @package   Vendor_Modulename
+ * @author    Ricky Thakur (Kapil Dev Singh)
+ * @copyright Copyright (c) 2018 Ricky Thakur
+ * @license   MIT license (see LICENSE.txt for details)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add 
+        id="Vendor_Modulename::menu_1" 
+        title="Main Menu" 
+        module="Vendor_Modulename" 
+        sortOrder="10" 
+        resource="Vendor_Modulename::menu_1" />
+        
+        <add 
+        id="Vendor_Modulename::menu_1_1" 
+        title="Menu Level 1" 
+        module="Vendor_Modulename" 
+        sortOrder="20" 
+        parent="Vendor_Modulename::menu_1" 
+        action="routeadminlabel/controllername" 
+        resource="Vendor_Modulename::menu_1_1"/>
+    </menu>
+</config>
